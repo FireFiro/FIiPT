@@ -61,10 +61,17 @@ footer {
 }
 
 main {
-    height: 900px;
+    height: 2000px;
 }
 
 @media (min-width:1366px) {
+    .pos-lock {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
     .hover-link {
         position: relative;
         color: #000;
