@@ -1,0 +1,94 @@
+body::-webkit-scrollbar { 
+    width: 0; 
+}
+
+.pos-lock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.link-ease-in-out a {
+    display: inline-block;
+    color: #00bfff; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.link-ease-in-out a:after {
+    background-color: #ffffff; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
+
+.green {
+	background-color: #d73d6c;
+}
+
+.owl-carousel .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+	transform: scale3d(1.0, 1.0, 1);
+}
+
+.owl-carousel .item {
+    opacity: .6;
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+	transform: scale3d(0.9, 0.9, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    background: #f5b335;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    transition: bottom 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-down {
+    bottom: -40px;
+}
+
+main {
+    height: 900px;
+}
+
+@media (min-width:1366px) {
+    .hover-link {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+    }
+      
+    .hover-link:hover {
+        color: #000;
+    }
+    
+    .hover-link::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 6px;
+        /* left: 0; */
+        background-color: rgb(255, 255, 255);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .hover-link:hover::before {
+        transform: scaleX(0.9);
+    }
+}
