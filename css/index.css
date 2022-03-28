@@ -1,6 +1,6 @@
-body::-webkit-scrollbar { 
+/* body::-webkit-scrollbar { 
     width: 0; 
-}
+} */
 
 .pos-lock {
     position: fixed;
