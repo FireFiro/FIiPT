@@ -9,6 +9,16 @@ body::-webkit-scrollbar {
     right: 0;
 }
 
+.text-on-carousel{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text-on-carousel:hover{
+    text-decoration: none;
+    color: #d19a9a;
+}
+
 .link-ease-in-out a {
     display: inline-block;
     color: #00bfff; /* Цвет обычной ссылки */
@@ -31,7 +41,7 @@ body::-webkit-scrollbar {
 }
 
 .green {
-	background-color: #d73d6c;
+	background-color: #d57276;
 }
 
 .owl-carousel .owl-item.active.center .item {
@@ -47,19 +57,7 @@ body::-webkit-scrollbar {
     transition: all 0.3s ease-in-out;
 }
 
-footer {
-    background: #f5b335;
-    height: 40px;
-    position: fixed;
-    bottom: 0;
-    transition: bottom 0.2s ease-in-out;
-    width: 100%;
-}
-
-.nav-down {
-    bottom: -40px;
-}
-
-main {
-    height: 2000px;
+.news-blur {
+    top: unset;
+    backdrop-filter: blur(5px);
 }

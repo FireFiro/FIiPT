@@ -1,0 +1,16 @@
+footer {
+    background: #d57276;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    transition: bottom 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-down {
+    bottom: -50px;
+}
+
+main {
+    height: 2000px;
+}
