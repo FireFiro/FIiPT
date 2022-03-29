@@ -1,0 +1,10 @@
+[
+    {
+        "fio":"test",
+        "image": "https://cdn.discordapp.com/attachments/712187625720774687/957965555812433971/pexels-mikael-blomkvist-6476587.jpg",
+        "modal": {
+            "id":"test",
+            "fio": "test"
+        }
+    }
+]
