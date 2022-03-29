@@ -7,7 +7,11 @@ $(document).ready(function() {
         addCard(p)
         result += `\n${coll}\n`
     })
+<<<<<<< HEAD
     result = `<div class="row row-cols-xl-3 row-cols-md-1 justify-content-sm-center pt-sm-5 pt-xl-0">${result}</div>`
+=======
+    result = `<div class="row row-cols-2 justify-content-sm-center pt-sm-5 pt-xl-0">${result}</div>`
+>>>>>>> d91061366acb754f81619aab6db3e190f5e178ed
     $("#cards").append(result)
     $("#modal").append(modal)
 

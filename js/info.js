@@ -7,7 +7,11 @@ $(document).ready(function() {
         addCard(p)
         result += `\n${coll}\n`
     })
+<<<<<<< HEAD
     result = `<div class="row row-cols-xl-3 row-cols-md-1 justify-content-sm-center pt-sm-5 pt-xl-0">${result}</div>`
+=======
+    result = `<div class="row row-cols-2 justify-content-sm-center pt-sm-5 pt-xl-0">${result}</div>`
+>>>>>>> d91061366acb754f81619aab6db3e190f5e178ed
     $("#cards").append(result)
     $("#modal").append(modal)
 
@@ -41,4 +45,26 @@ $(document).ready(function() {
         return coll, modal
     }
 
+<<<<<<< HEAD
 });
+=======
+});
+
+{/* <div class="modal fade" id="testID1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> */}
+>>>>>>> d91061366acb754f81619aab6db3e190f5e178ed
