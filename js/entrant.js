@@ -3,7 +3,7 @@ $(document).ready(function() {
     result = ``
     coll = ``
     modal = ``
-    prepod.forEach(p => {
+    entrant.forEach(p => {
         addCard(p)
         result += `\n${coll}\n`
     })
@@ -11,17 +11,17 @@ $(document).ready(function() {
     $("#cards").append(result)
     $("#modal").append(modal)
 
-    function addCard(prepods) {
+    function addCard(entrants) {
         // Generate Card
-        start = `<div class="card bg-dark text-white hover-click" data-bs-toggle="modal" data-bs-target="#${prepods.modal.id}">`
+        start = `<div class="card bg-dark text-white hover-click" data-bs-toggle="modal" data-bs-target="#${entrants.modal.id}">`
         end = `</div>`
-        image = `<img src="${prepods.image}" class="card-img">`
-        cardinfo = `<div class="card-img-overlay d-flex align-items-end">\n<p class="card-text">${prepods.fio}</p>\n</div>`
+        image = `<img src="${entrants.image}" class="card-img">`
+        cardinfo = `<div class="card-img-overlay d-flex align-items-center justify-content-around">\n<p class="card-text text-center">${entrants.fio}</p>\n</div>`
         coll = `<div class="col-sm-10 pb-sm-3 col-lg-4 pb-3">\n${start}\n${image}\n${cardinfo}\n${end}\n</div>`
         curentItems++
 
         // Generate Modal
-        modal += `\n<div class="modal fade" id="${prepods.modal.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        modal += `\n<div class="modal fade" id="${entrants.modal.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -29,7 +29,7 @@ $(document).ready(function() {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              ${prepods.modal.text}
+              ${entrants.modal.text}
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>

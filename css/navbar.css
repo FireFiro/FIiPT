@@ -1,11 +1,68 @@
-@media (min-width:1366px) {
+@media (min-width:1200px) {
     .pos-lock {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
     }
+
+    /* Hover Active */
+    .hover-link_active {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+    }
+      
+    .hover-link_active:hover {
+        color: #000;
+    }
     
+    .hover-link_active::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 6px;
+        /* left: 0; */
+        background-color: rgb(21, 250, 231);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .hover-link_active:hover::before {
+        transform: scaleX(0.9);
+    }
+
+    /* Hover Disable */
+    .hover-link_disabel {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+    }
+      
+    .hover-link_disabel:hover {
+        color: #000;
+    }
+    
+    .hover-link_disabel::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 6px;
+        /* left: 0; */
+        background-color: rgba(0,0,0,.3);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .hover-link_disabel:hover::before {
+        transform: scaleX(0.9);
+    }
+
+    /* Hover */
     .hover-link {
         position: relative;
         color: #000;
