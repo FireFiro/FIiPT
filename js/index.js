@@ -15,3 +15,9 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+particlesJS.load('particles-js', './particles.json', function() {
+});
+
+particlesJS.load('particles-js2', './particles.json', function() {
+});

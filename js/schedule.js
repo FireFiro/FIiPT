@@ -6,6 +6,8 @@ $(document).ready(function() {
     })
 
     function addTable(schedules) {
+        predmet = ``
+        curentItem = 0
         lesson = schedules.lesson
         lesson.forEach(l => {
             addPredmet(l)
@@ -30,8 +32,7 @@ $(document).ready(function() {
     }
 
     function addPredmet(lessons) {
-        curentItem = 0
-        predmet = ``
+        
         curentItem++
         predmet += `<tr>
         <th scope="row">${curentItem}</th>

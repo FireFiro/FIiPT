@@ -1,3 +1,14 @@
+@font-face {
+    font-family: icomoon;
+    src: url(../icomoon.ttf);
+}
+
+.icon-fipt:before {
+    font-family: icomoon;
+    font-style: normal;
+    font-size: 35px;
+    content: "\e900";
+  }
 @media (min-width:1200px) {
     .pos-lock {
         position: fixed;
@@ -65,12 +76,12 @@
     /* Hover */
     .hover-link {
         position: relative;
-        color: #000;
+        color: rgb(255, 255, 255);
         text-decoration: none;
     }
       
     .hover-link:hover {
-        color: #000;
+        color: rgb(255, 255, 255);
     }
     
     .hover-link::before {

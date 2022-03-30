@@ -16,8 +16,8 @@ $(document).ready(function() {
         // Generate Card
         start = `<div class="card bg-dark text-white hover-click" data-bs-toggle="modal" data-bs-target="#${prepods.modal.id}">`
         end = `</div>`
-        image = `<img src="${prepods.image}" class="card-img">`
-        cardinfo = `<div class="card-img-overlay d-flex align-items-end">\n<p class="card-text">${prepods.fio}</p>\n</div>`
+        image = `<img src="${prepods.image}" width="200px" class="card-img">`
+        cardinfo = `<div class="card-img-overlay d-flex align-items-end ">\n<p class="card-text news-blur">${prepods.fio}</p>\n</div>`
         coll = `<div class="col-sm-10 pb-sm-3 col-lg-4 pb-3">\n${start}\n${image}\n${cardinfo}\n${end}\n</div>`
         curentItems++
 
