@@ -36,24 +36,12 @@
             <a class="nav-link disabled" href="#">Для студента</a>
           </li>
           <li class="nav-item hover-link">
-            <a class="nav-link" href="./entrant.html" style="color:white">Для абитурьента</a>
+            <a class="nav-link" href="./entrant.html" style="color:white">Для абитуриента</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-      <div>
-        <select id="group">
-          <option value="" selected disabled>Выберите группу</option>
-          <option value="group781">781</option>
-          <option value="group782">782</option>
-        </select>
-        <script>
-          var tr = document.querySelectorAll('group'),
-          sel = document.querySelectorAll('select');
-          sel.forEach(el=>el.onclick=e=>tr.forEach(el=>el.style.display = (el.textContent.includes(sel[0].options[sel[0].selectedIndex].textContent) || sel[0].selectedIndex==0) && (el.textContent.includes(sel[1].options[sel[1].selectedIndex].textContent) || sel[1].selectedIndex==0)?'table-row':'none'));
-        </script>          
-      </div>
       <!-- Table -->
       <div class="container" id="table">
       </div>
